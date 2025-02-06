@@ -9,7 +9,7 @@ function App() {
   const handleAddTask = () => {
     if (text.trim() !== "") {
       setTasks([...tasks, text])
-      setText("") // Clear input after adding
+      setText("") 
     }
   }
 
@@ -18,7 +18,7 @@ function App() {
     setTasks(newTasks)
   }
 
-  // New function to filter tasks based on search term
+  
   const filteredTasks = tasks.filter(task => 
     task.toLowerCase().includes(searchTerm.toLowerCase())
   )
@@ -27,7 +27,7 @@ function App() {
     <div className="todo-container">
       <h1>TO DO LIST</h1>
       
-      {/* Add Task Input */}
+      
       <div className="input-container">
         <input
           type="text"
@@ -39,7 +39,7 @@ function App() {
         <button onClick={handleAddTask}>Add Task</button>
       </div>
 
-      {/* Search Input */}
+      
       <div className="search-container">
         <input
           type="text"
@@ -49,7 +49,7 @@ function App() {
         />
       </div>
       
-      {/* Task List */}
+      
       {filteredTasks.length === 0 ? (
         <p>No tasks found.</p>
       ) : (
