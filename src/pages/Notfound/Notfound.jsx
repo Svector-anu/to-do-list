@@ -1,10 +1,10 @@
 import React from 'react'
-import { LinK} from 'react-router-dom'
+import { Link} from 'react-router-dom'
 
 const Notfound = () => {
   return (
     <div>
-      This  page doesnt exit. <LinK to ="/">Go to Home</LinK>
+      This  page doesnt exit. <Link to ="/">Go to Home</Link>
     </div>
   )
 }

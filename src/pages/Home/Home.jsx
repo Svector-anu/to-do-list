@@ -1,5 +1,8 @@
 import React from "react";
 import { useState } from "react"; // Added this import
+import "../../component/Navbar/Navbar.jsx";
+import Navbar from "../../component/Navbar/Navbar.jsx";
+import "./Home.css";
 
 const Home = () => {
     const [text, setText] = useState("")
@@ -24,6 +27,7 @@ const Home = () => {
 
     return (
         <div className="todo-container">
+            <Navbar />
             <h1>TO DO LIST</h1>
             
             {/* Add Task Input */}
